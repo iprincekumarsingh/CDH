@@ -15,6 +15,7 @@
       }
 
       body {
+<<<<<<< HEAD
         font-family: "Lato", sans-serif;
         color: #888;
         margin: 0;
@@ -25,7 +26,53 @@
         width: 100%;
         height: 100vh;
         text-align: center;
+=======
       }
+      .navbar {
+        display: none;
+      }
+      a {
+        text-decoration: black;
+        color: white;
+      }
+
+      @media (max-width: 992px) {
+        .comp {
+          display: none;
+        }
+        .navbar {
+          display: block;
+        }
+        .navbar .ml-auto .nav-item {
+          color: var(--secondary-color);
+        }
+        .hero {
+          z-index: -1;
+          /* top: -120px; */
+          position: relative;
+          width: 100%;
+          margin-bottom: 30px;
+          padding: 189px 0 0 0;
+          overflow: hidden;
+          background: linear-gradient(
+              rgb(0, 0, 0, 0.9),
+              rgb(158, 158, 158, 0.6)
+            ),
+            url(../img/navbg.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .navbar .container-fluid {
+          border-radius: 0;
+          margin-left: -14px;
+          background-color: var(--primary-color);
+          color: var(--primary-color);
+          border-top-right-radius: 0px;
+        }
+>>>>>>> beta
+      }
+      /* } */
 
       .fof {
         display: table-cell;
@@ -49,10 +96,183 @@
       }
     </style>
   </head>
+<<<<<<< HEAD
   <body>
     <div id="main">
       <div class="fof">
         <h1>Webiste is under Maintenance</h1>
+=======
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid nav-sticky">
+        <a href="index.html" class="navbar-brand"
+          ><img src="CDH_logo.png" alt="" srcset="" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="#home" class="nav-item nav-link">Home</a>
+            <a href="#service" class="nav-item nav-link">Fields</a>
+            <a href="#experience" class="nav-item nav-link">Projects</a>
+            <a
+              href="https://codingwizarditer.github.io/Project-List/"
+              target="_blank"
+              class="nav-item nav-link"
+              >Project Ideas</a
+            >
+            <a
+              href="https://codingwizarditer.github.io/AGDOC/"
+              target="_blank"
+              class="nav-item nav-link"
+              >AGDOC</a
+            >
+            <ul class="nav-item nav-link">
+              <li style="list-style-type: none" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">E-Learn</a>
+                <div class="dropdown-content">
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLsyeobzWxl7oZ-fxDYkOToURHhMuWD1BK"
+                    target="_blank"
+                    >Java</a
+                  >
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR"
+                    target="_blank"
+                    >C</a
+                  >
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME"
+                    target="_blank"
+                    >Python</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=cQepf9fY6cE&list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_"
+                    target="_blank"
+                    >Shell Script</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=roDz8mMvbIg&list=PLknSwrodgQ72X4sKpzf5vT8kY80HKcUSe"
+                    target="_blank"
+                    >Android</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=tMZn54M8tGU&list=PLfP3JxW-T70Hh7j17_NLzjZ8CejSPx40V"
+                    target="_blank"
+                    >ML</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN"
+                    target="_blank"
+                    >Advanced ML</a
+                  >
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg"
+                    target="_blank"
+                    >Web Dev</a
+                  >
+                  <a href="sites_iframe.html" target="_blank">More..</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav-item nav-link">
+              <li style="list-style-type: none" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Courses</a>
+                <div class="dropdown-content">
+                  <a
+                    href="https://cognitiveclass.ai/courses/python-for-data-science"
+                    target="_blank"
+                    >IBM's Python</a
+                  >
+                  <a
+                    href="https://www.coursera.org/search?query=ml&page=1"
+                    target="_blank"
+                    >ML Coursera</a
+                  >
+                  <a
+                    href="https://learning.tcsionhub.in/iDH/India/"
+                    target="_blank"
+                    >TCS ION</a
+                  >
+                  <a href="https://www.elementsofai.com/" target="_blank"
+                    >Elements Of AI</a
+                  >
+                  <a href="https://app.korbit.ai/tutor/home" target="_blank"
+                    >Korbit AI</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <a
+              href="sites-events.html"
+              class="nav-item nav-link"
+              target="_blank"
+              >Events</a
+            >
+            <a href="#review" class="nav-item nav-link">Organisers</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+            <img src="./img/moon.png" alt="dark" id="icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile  -->
+    <header class="comp">
+      <div class="logo">
+        <img class="club_logo" src="CDH_logo.png" alt="" srcset="" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#service">Projects</a></li>
+          <li><a href="#experience">Project Ideas</a></li>
+          <li><a href="https://codingwizarditer.github.io/AGDOC/">AGDOC</a></li>
+          <li><a href="courses.php">Courses</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="#review">Organisers</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Nav Bar End -->
+
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-sm-12 col-md-6" style="padding: 20px">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1>CDH brings</h1>
+                <h2></h2>
+                <div class="typed-text">
+                  Coding Competitions , Monthly Challenges , Projects Building ,
+                  Live Events , and Many More to Go...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-none d-md-block">
+            <div class="hero-image">
+              <img style="height: 80px" src="img/soa_logo.png" alt="Soa Logo" />
+            </div>
+          </div>
+        </div>
+>>>>>>> beta
       </div>
     </div>
   </body>
