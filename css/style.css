@@ -16,9 +16,6 @@ body {
   background: var(--primary-color) url(../img/pattern.png) repeat;
   font-family: "Montserrat", sans-serif;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
 
 h1,
 h2,
@@ -590,7 +587,7 @@ a:focus {
 }
 
 .about a {
-  border-radius: 3px;
+    border-radius: 3px;
 }
 
 .about .col-lg-6 {
