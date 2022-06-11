@@ -13,10 +13,28 @@
 }
 
 body {
-  background: var(--primary-color) url(../img/pattern.png) repeat;
+  /* backgr ound: var(--primary-color) url(../img/pattern.png) repeat; */
   font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
 h1,
 h2,
 h3,
@@ -382,8 +400,8 @@ a:focus {
   margin-bottom: 45px;
   padding: 189px 0 0 0;
   overflow: hidden;
-  background: linear-gradient(rgb(0, 0, 0, 0.9), rgb(158, 158, 158, 0.6)),
-    url(../img/navbg.jpg);
+  /* background: linear-gradient(rgb(0, 0, 0, 0.9), rgb(158, 158, 158, 0.6)), */
+    /* url(../img/navbg.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -413,7 +431,7 @@ a:focus {
 }
 
 .hero .hero-text h1 {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 45px;
   font-weight: 800;
   letter-spacing: 3px;
@@ -424,7 +442,7 @@ a:focus {
   display: inline-block;
   margin: 0;
   height: 35px;
-  color: rgb(248, 245, 245);
+  /* color: rgb(248, 245, 245); */
   font-size: 40px;
   font-weight: 600;
 }
@@ -599,6 +617,7 @@ a:focus {
 }
 
 .about .about-img {
+  padding: 10px;
   padding-top: 20px;
   position: relative;
   height: 100%;
@@ -878,27 +897,30 @@ a:focus {
   transition: ease-in;
 }
 .service .service-item:hover {
-  box-shadow: inset 800px 0 0 0 #ef233c;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  box-shadow: inset 800px 0 0 0 #5A20CB;
+  /* border-top-left-radius: 30px; */
+  border-radius: 26px;
+ color:  var(--primary-color);
+  /* border-bottom-right-radius: 30px; */
 }
 
 .service .service-icon {
   position: relative;
   width: 150px;
-  border-top-left-radius: 30px;
+  /* border-top-left-radius: 30px; */
+  border-radius: 26px;
   min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ef233c;
+  /* border: 1px solid #ef233c; */
   background: #ffffff;
 }
 
 .service .service-icon i {
   position: relative;
   font-size: 60px;
-  color: #ef233c;
+  /* color: #ef233c; */
   transition: 0.3s;
 }
 
@@ -917,7 +939,7 @@ a:focus {
 .service .service-text h3 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: rgb(252, 5, 5);
+  color: rgb(76, 67, 67);
   text-shadow: 1.5px 1.5px 1.5px rgb(20, 20, 20);
   font-weight: 600;
   transition: 1s;
@@ -931,7 +953,7 @@ a:focus {
 
 .service .service-item:hover .service-text h3,
 .service .service-item:hover .service-text p {
-  color: var(--secondary-color);
+  color:whitesmoke
 }
 
 @media (max-width: 575.98px) {
