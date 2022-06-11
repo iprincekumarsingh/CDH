@@ -27,84 +27,87 @@
 
     <link href="css/style.css" rel="stylesheet" />
     <style>
-      body {
-      }
-      .navbar {
-        display: none;
-        color: black;
-      }
-      a {
-        text-decoration: black;
-        color: black;
-        font-weight: 600;
-      }
+            body {
+            }
+            .navbar {
+              display: none;
+              color: black;
+            }
+            a {
+              text-decoration: black;
+              color: black;
+              font-weight: 600;
+            }
 
-      @media (max-width: 992px) {
-        .comp {
-          display: none;
-        }
-        .navbar {
-          display: block;
-        }
-        .navbar .ml-auto .nav-item {
-          color: var(--secondary-color);
-        }
-        .hero {
-          z-index: -1;
-          /* top: -120px; */
-          position: relative;
-          width: 100%;
-          margin-bottom: 30px;
-          padding: 189px 0 0 0;
-          overflow: hidden;
-          background: linear-gradient(
-              rgb(0, 0, 0, 0.9),
-              rgb(158, 158, 158, 0.6)
-            ),
-            url(../img/navbg.jpg);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-        .navbar .container-fluid {
-          border-radius: 0;
-          margin-left: -14px;
-          background-color: var(--primary-color);
-          color: var(--primary-color);
-          border-top-right-radius: 0px;
-        }
-      }
-      /* } */
+            @media (max-width: 992px) {
+              .comp {
+                display: none;
+              }
+              .navbar {
+                display: block;
+              }
+              .navbar .ml-auto .nav-item {
+                color: var(--secondary-color);
+              }
+              .hero {
+                z-index: -1;
+                /* top: -120px; */
+                position: relative;
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 189px 0 0 0;
+                overflow: hidden;
+                background: linear-gradient(
+                    rgb(0, 0, 0, 0.9),
+                    rgb(158, 158, 158, 0.6)
+                  ),
+                  url(../img/navbg.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .navbar .container-fluid {
+                border-radius: 0;
+                margin-left: -14px;
+                background-color: var(--primary-color);
+                color: var(--primary-color);
+                border-top-right-radius: 0px;
+              }
+            }
+            /* } */
 
-      .navbar-light .navbar-nav .nav-link:hover {
-        color: red;
-      }
+            .navbar-light .navbar-nav .nav-link:hover {
+              color: red;
+            }
 
-      /* new desktop navbar */
+            /* new desktop navbar */
 
-      header {
-        display: flex;
-        justify-content: space-between;
-        background-color: #CAD5E2;
-        align-items: center;
+            header {
+              height: 80px;
+          display: flex;
+          justify-content: space-between;
+          /* background-color: #CAD5E2; */
+          align-items: center;
+          padding: 20px;
       }
-      header .logo {
-        display: flex;
-        width: 100px;
-        padding: 10px;
-      }
-      nav ul li {
-        display: inline-block;
-        align-content: center;
-      }
-      .club_logo {
-        width: 150px;
-        margin-left: 10px;
-      }
-      nav ul li a {
-        margin-right: 10px;
-        font-size: 18px;
-      }
+          
+            header .logo {
+              display: flex;
+              width: 100px;
+              padding: 10px;
+            }
+            nav ul li {
+              display: inline-block;
+              align-content: center;
+            }
+            .club_logo {
+              width: 150px;
+              margin-left: 10px;
+            }
+            nav ul li a {
+              margin-right: 10px;
+              font-size: 18px;
+            }
     </style>
   </head>
 
