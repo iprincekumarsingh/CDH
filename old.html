@@ -27,66 +27,226 @@
 
     <link href="css/style.css" rel="stylesheet" />
     <style>
-      body {
-      }
-      a {
-        text-decoration: black;
-        color: white;
-      }
+            body {
+            }
+            .navbar {
+              display: none;
+              color: black;
+            }
+            a {
+              text-decoration: black;
+              color: black;
+              font-weight: 600;
+            }
 
-      @media (max-width: 992px) {
-        .navbar .ml-auto .nav-item {
-          color: var(--secondary-color);
-        }
-      }
+            @media (max-width: 992px) {
+              .comp {
+                display: none;
+              }
+              .navbar {
+                display: block;
+              }
+              .navbar .ml-auto .nav-item {
+                color: var(--secondary-color);
+              }
+              .hero {
+                z-index: -1;
+                /* top: -120px; */
+                position: relative;
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 189px 0 0 0;
+                overflow: hidden;
+                background: linear-gradient(
+                    rgb(0, 0, 0, 0.9),
+                    rgb(158, 158, 158, 0.6)
+                  ),
+                  url(../img/navbg.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .navbar .container-fluid {
+                border-radius: 0;
+                margin-left: -14px;
+                background-color: var(--primary-color);
+                color: var(--primary-color);
+                border-top-right-radius: 0px;
+              }
+            }
+            /* } */
 
-      .navbar-light .navbar-nav .nav-link:hover {
-        color: red;
-      }
+            .navbar-light .navbar-nav .nav-link:hover {
+              color: red;
+            }
 
-      /* new desktop navbar */
+            /* new desktop navbar */
 
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+            header {
+              height: 80px;
+          display: flex;
+          justify-content: space-between;
+          /* background-color: #CAD5E2; */
+          align-items: center;
+          padding: 20px;
       }
-      header .logo {
-        display: flex;
-        width: 100px;
-        padding: 10px;
-      }
-      nav ul li {
-        display: inline-block;
-        align-content: center;
-      }
-      .club_logo {
-        width: 76px;
-        margin-left: 10px;
-      }
-      nav ul li a {
-        margin-right: 10px;
-        font-size: 18px;
-      }
+          
+            header .logo {
+              display: flex;
+              width: 100px;
+              padding: 10px;
+            }
+            nav ul li {
+              display: inline-block;
+              align-content: center;
+            }
+            .club_logo {
+              width: 150px;
+              margin-left: 10px;
+            }
+            nav ul li a {
+              margin-right: 10px;
+              font-size: 18px;
+            }
     </style>
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!-- Nav Bar Start -->
-    <header>
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+      <div class="container-fluid nav-sticky">
+        <a href="index.html" class="navbar-brand"
+          ><img src="logo.png" alt="" srcset="" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav ml-auto">
+            <a href="#home" class="nav-item nav-link">Home</a>
+            <a href="#service" class="nav-item nav-link">Fields</a>
+            <a href="#experience" class="nav-item nav-link">Projects</a>
+            <a
+              href="https://codingwizarditer.github.io/Project-List/"
+              target="_blank"
+              class="nav-item nav-link"
+              >Project Ideas</a
+            >
+            <a
+              href="https://codingwizarditer.github.io/AGDOC/"
+              target="_blank"
+              class="nav-item nav-link"
+              >AGDOC</a
+            >
+            <ul class="nav-item nav-link">
+              <li style="list-style-type: none" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">E-Learn</a>
+                <div class="dropdown-content">
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLsyeobzWxl7oZ-fxDYkOToURHhMuWD1BK"
+                    target="_blank"
+                    >Java</a
+                  >
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR"
+                    target="_blank"
+                    >C</a
+                  >
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME"
+                    target="_blank"
+                    >Python</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=cQepf9fY6cE&list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_"
+                    target="_blank"
+                    >Shell Script</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=roDz8mMvbIg&list=PLknSwrodgQ72X4sKpzf5vT8kY80HKcUSe"
+                    target="_blank"
+                    >Android</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=tMZn54M8tGU&list=PLfP3JxW-T70Hh7j17_NLzjZ8CejSPx40V"
+                    target="_blank"
+                    >ML</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN"
+                    target="_blank"
+                    >Advanced ML</a
+                  >
+                  <a
+                    href="https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg"
+                    target="_blank"
+                    >Web Dev</a
+                  >
+                  <a href="sites_iframe.html" target="_blank">More..</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="nav-item nav-link">
+              <li style="list-style-type: none" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Courses</a>
+                <div class="dropdown-content">
+                  <a
+                    href="https://cognitiveclass.ai/courses/python-for-data-science"
+                    target="_blank"
+                    >IBM's Python</a
+                  >
+                  <a
+                    href="https://www.coursera.org/search?query=ml&page=1"
+                    target="_blank"
+                    >ML Coursera</a
+                  >
+                  <a
+                    href="https://learning.tcsionhub.in/iDH/India/"
+                    target="_blank"
+                    >TCS ION</a
+                  >
+                  <a href="https://www.elementsofai.com/" target="_blank"
+                    >Elements Of AI</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <a href="eventsCDH.html" class="nav-item nav-link" target="_blank"
+              >Events</a
+            >
+            <a href="#review" class="nav-item nav-link">Organisers</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+            <img src="./img/moon.png" alt="dark" id="icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile  -->
+    <header class="comp">
       <div class="logo">
-        <img class="club_logo" src="CDH_logo.png" alt="" srcset="" />
+        <img class="club_logo" src="logo.png" alt="" srcset="" />
       </div>
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#service">Projects</a></li>
+          <li><a href="#experience">Project Ideas</a></li>
+          <li><a href="https://codingwizarditer.github.io/AGDOC/">AGDOC</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="eventsCDH.html">Events</a></li>
+          <li><a href="#review">Organisers</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
       </nav>
     </header>
@@ -96,7 +256,7 @@
     <div class="hero" id="home">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-6" style="padding: 20px">
             <div class="hero-content">
               <div class="hero-text">
                 <h1>CDH brings</h1>
@@ -382,379 +542,6 @@
       </div>
     </div>
 
-    <!-- Portfolio Start -->
-    <!-- <div class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                <p>Our Members</p>
-                <h2>-------------</h2>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <ul id="portfolio-filter">
-                        <li data-filter="*" class="filter-active">Click to Unstack Images</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Sreyash Mishra.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Sreyash Mishra(MCA 2nd Yr)</h3>
-                            <a class="btn" href="img/CDH_mem/Sreyash Mishra.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Akash Kumar Singh.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Akash Singh(4th Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Akash Kumar Singh.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Samyak_gantayat.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Samyak Gantayat(4th Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Samyak_gantayat.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Shafeen Rizvi.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Shafeen Rizvi(4th Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Shafeen Rizvi.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/VIDHI KUMARI.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Vidhi Kumari(4th Year)</h3>
-                            <a class="btn" href="img/CDH_mem/VIDHI KUMARI.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Subhransu Nayak.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Subhranshu Nayak(4th Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Subhransu Nayak.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/CDH_mem/Sourav Kumar.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Sourav Kumar(4th Year)</h3>
-                                <a class="btn" href="img/CDH_mem/Sourav Kumar.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Shashank Kumar.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Sashank Kumar(4th Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Shashank Kumar.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Rithik Sahoo.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Rithik Sahoo(4th Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Rithik Sahoo.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Rituraj Gupta.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Rituraj Gupta(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Rituraj Gupta.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Shreejoy Dash.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Shreejoy Dash(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Shreejoy Dash.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/KSHITIZ RANJAN.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Kshitiz Ranjan(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/KSHITIZ RANJAN.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Niharika prasad.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Niharika Prasad(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Niharika prasad.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Sourav Kumar Prusty.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Sourav Prusty(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Sourav Kumar Prusty.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/A S V K Vinayak.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>ASVK Vinayak(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/A S V K Vinayak.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Abhipsha Sahu.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Abhipsha Sahu(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Abhipsa Sahu.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Sahil Agarwal.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Sahil Agarwal(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Sahil Agarwal.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Anwesha Routray.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Anwesha Routray(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Anwesha Routray.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Sourav Bera.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Sourav Bera(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Sourav Bera.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Suman More.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Suman More(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Suman More.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Prerna Babber.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Prerna Babber(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Prerna Babber.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Diptimayee Sahu.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Diptimayee Sahoo(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Diptimayee Sahu.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Abhisht Shankar.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Abhist Shankar(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Abhisht Shankar.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Harsh Sinha.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Harsh Sinha(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Harsh Sinha.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Suchitra Satapathy.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Suchitra Satapathy(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Suchitra Satapathy.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Sachin Kumar.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Sachin Kumar(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Sachin Kumar.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/AYUSH PATTANAYAK.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Ayush Pattanayak(3rd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/AYUSH PATTANAYAK.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Smriti Goswami.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Smriti Goswami(2nd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Smriti Goswami.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Siddhant Swarup Mallick.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Siddhant Swarup Mallick(2nd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Siddhant Swarup Mallick.jpg"
-                                data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/om.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Omm Kumar(2nd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/om.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/Sambit Raj.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Sambit Raj(2nd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/Sambit Raj.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-img">
-                            <img src="img/CDH_mem/manisha_parichha.jpg" alt="Image">
-                        </div>
-                        <div class="portfolio-text">
-                            <h3>Manisha Parichha(2nd Year)</h3>
-                            <a class="btn" href="img/CDH_mem/manisha_parichha.jpg" data-lightbox="portfolio">+</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Portfolio End -->
-
     <!-- Testimonial Start -->
     <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
       <div class="container">
@@ -805,52 +592,13 @@
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
-
-    <!-- Contact Start -->
-    <!-- <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <!-- Contact End -->
 
     <!-- Footer Start -->
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
       <div class="container-fluid">
         <div class="container">
           <div class="footer-info">
-            <h2>Coding Wizard Club</h2>
+            <h2>CAREER DEVELOPMENT HUB</h2>
             <h3>ITER, SOA University, Bhubaneswar</h3>
             <div class="footer-menu">
               <p>codingwizard.iter@gmail.com</p>
@@ -898,9 +646,9 @@
     <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
 
     <!-- Pre Loader -->
-    <div id="loader" class="show">
+    <!-- <div id="loader" class="show">
       <div class="loader"></div>
-    </div>
+    </div> -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
